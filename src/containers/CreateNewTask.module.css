@@ -1,0 +1,36 @@
+.CreateNewTask {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.ButtonContainer{
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.Show{
+    display: block;
+    margin: unset;
+    white-space: pre-wrap;
+    color: red;
+    background-color: #fa80726b;
+}
+
+.Show h4{
+    margin: unset;
+    padding: unset;
+}
+
+.Hide{
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .CreateNewTask {
+        /* width: calc(100% - 280px);
+        margin-left: 280px; */
+    }
+}

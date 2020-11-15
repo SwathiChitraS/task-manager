@@ -1,0 +1,39 @@
+.Inbox{
+    display: flex;
+    position: relative;
+}
+.Inbox .Id{
+    padding: 4px;
+    box-sizing: border-box;
+    width: 10%;
+    max-width: 135px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Inbox .Description{
+    padding: 4px;
+    box-sizing: border-box;
+    width: 40%;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Inbox .Date{
+    padding: 4px;
+    box-sizing: border-box;
+    width: 25%;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.Inbox .HoverButton{
+    position: absolute;
+    right: 0px;
+    padding: 4px;
+}
+.Inbox.InboxRows{
+    cursor: pointer;
+}

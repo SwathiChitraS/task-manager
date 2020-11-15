@@ -1,0 +1,30 @@
+.Login {
+    width: 100%;
+    height: calc(100vh - 56px);
+    /* margin-left: 0px; */
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.Background{
+    width: 100%;
+    max-width: 256px;
+    min-width: 50px;
+    margin-top: 25%;
+}
+
+.Button{
+    padding-top: 8px;
+}
+
+.Hide{
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .Background {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+.CustomInput{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.CustomInput input{
+    height: 32px;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.CustomInput input:focus{
+    border-color: skyblue;
+    outline: none;
+}

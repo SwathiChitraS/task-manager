@@ -1,0 +1,36 @@
+.CustomButton {
+    width: 80px;
+    max-width: 50%;
+}
+
+.CustomButton:first-child {
+    margin-right: 8px;
+}
+
+.CustomButton button{
+    background: white;
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid #703b09;
+    cursor: pointer;
+}
+
+.CustomButton button:hover{
+    box-shadow: 1px 1px 8px #703b09;
+}
+
+.CustomButton button:focus{
+    outline: none;
+    box-shadow: 1px 2px 4px #703b09;
+}
+
+.CustomButton button:disabled:hover {
+    box-shadow: none;
+}
+
+.CustomButton button:disabled {
+    opacity: 0.5;
+}

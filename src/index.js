@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import axios from 'axios';
+
+import {BrowserRouter} from 'react-router-dom';
+
+axios.interceptors.request.use(request =>{
+  request.headers['Access-Control-Allow-Origin'] =   "*";
+  // request.headers['Access-Control-Request-Method'] =   "*";
+  return request;
+});
+
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <App />
-  </React.StrictMode>,
+  </React.StrictMode></BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -1,0 +1,32 @@
+.CustomLink {
+    width: 80px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.CustomLink:first-child {
+    margin-right: 8px;
+}
+
+.CustomLink a{
+    background: white;
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid #703b09;
+    cursor: pointer;
+}
+
+.CustomLink a:hover{
+    box-shadow: 1px 1px 8px #703b09;
+}
+
+.CustomLink a:focus{
+    outline: none;
+    box-shadow: 1px 2px 4px #703b09;
+}
+.Hide{
+    display: none;
+}

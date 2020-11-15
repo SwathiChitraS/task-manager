@@ -1,0 +1,19 @@
+.CustomTextarea{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.CustomTextarea textarea{
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.CustomTextarea textarea:focus{
+    border-color: skyblue;
+    outline: none;
+}
