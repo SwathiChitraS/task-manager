@@ -1,10 +1,13 @@
 ### PROJECT DETAILS
 Credentials
+
 admin/Admin
+
 manager/Manager
+
 developer/Developer
 
-### Change the Firebase URL in index.js file
+# Change the Firebase URL in index.js file
 
 
 # Getting Started with Create React App
