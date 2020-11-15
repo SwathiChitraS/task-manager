@@ -44,7 +44,7 @@ class CreateNewProject extends Component {
         //     ...this.state
         // }
         if (this.state.id !== '' && this.state.startDate !== '' && this.state.endDate !== '' && this.state.title !== '') {
-            axios.put("https://taskmanager-58f82.firebaseio.com/data/" + this.state.id + ".json", data)
+            axios.put("/data/" + this.state.id + ".json", data)
                 .then(response => {
                     this.cancelClickHandler();
                 });
@@ -59,7 +59,7 @@ class CreateNewProject extends Component {
             ...this.state
         }
         if (this.state.id !== '' && this.state.startDate !== '' && this.state.endDate !== '' && this.state.title !== '') {
-            axios.delete("https://taskmanager-58f82.firebaseio.com/data/" + this.state.id +".json", data)
+            axios.delete("/data/" + this.state.id +".json", data)
                 .then(response => {
                     this.cancelClickHandler();
                 });

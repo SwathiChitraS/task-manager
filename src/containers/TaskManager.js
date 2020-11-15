@@ -36,7 +36,7 @@ class TaskManager extends Component {
             this.setState({ show: true, user: userDetails });
         }
 
-        axios.get("https://taskmanager-58f82.firebaseio.com/data.json")
+        axios.get("/data.json")
             .then(response => {
                 if (response.data !== null) {
                     let items = [];

@@ -8,6 +8,7 @@ import axios from 'axios';
 
 import {BrowserRouter} from 'react-router-dom';
 
+axios.defaults.baseURL= "https://taskmanager-58f82.firebaseio.com";
 axios.interceptors.request.use(request =>{
   request.headers['Access-Control-Allow-Origin'] =   "*";
   // request.headers['Access-Control-Request-Method'] =   "*";

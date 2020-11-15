@@ -69,7 +69,7 @@ class CreateNewTask extends Component {
         delete data.options;
         delete data.statusOptions;
         if (this.state.id !== '' && this.state.startDate !== '' && this.state.endDate !== '' && this.state.projectId !== '') {
-            axios.put("https://taskmanager-58f82.firebaseio.com/data/" + this.state.projectId + "/Task/" + this.state.id + ".json", data)
+            axios.put("/data/" + this.state.projectId + "/Task/" + this.state.id + ".json", data)
                 .then(response => {
                     this.cancelClickHandler();
                 });
@@ -84,7 +84,7 @@ class CreateNewTask extends Component {
             ...this.state
         }
         if (this.state.id !== '' && this.state.startDate !== '' && this.state.endDate !== '' && this.state.title !== '') {
-            axios.delete("https://taskmanager-58f82.firebaseio.com/data/" + this.state.projectId + "/Task/" + this.state.id + ".json", data)
+            axios.delete("/data/" + this.state.projectId + "/Task/" + this.state.id + ".json", data)
                 .then(response => {
                     this.cancelClickHandler();
                 });
@@ -95,7 +95,7 @@ class CreateNewTask extends Component {
     };
 
     componentDidMount() {
-        axios.get("https://taskmanager-58f82.firebaseio.com/data.json")
+        axios.get("/data.json")
             .then(response => {
                 if (response.data !== null) {
                     let options = [
